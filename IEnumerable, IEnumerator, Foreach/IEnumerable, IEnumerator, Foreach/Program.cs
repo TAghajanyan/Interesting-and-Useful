@@ -21,6 +21,7 @@ namespace IEnumerable__IEnumerator__Foreach
 
             Console.WriteLine(new string('-', 30));
 
+
             IEnumerable enumerable = userCollection as IEnumerable;
 
             IEnumerator enumerator = enumerable.GetEnumerator();
