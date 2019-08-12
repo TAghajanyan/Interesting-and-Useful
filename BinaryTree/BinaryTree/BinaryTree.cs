@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VarLesson
+namespace BinaryTree
 {
     class BinaryTree<T> where T : IComparable<T>
     {

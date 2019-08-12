@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VarLesson
+namespace BinaryTree
 {
     class Program
     {
