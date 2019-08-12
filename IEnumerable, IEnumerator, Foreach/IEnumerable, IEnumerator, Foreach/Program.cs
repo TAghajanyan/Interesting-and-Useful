@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IEnumerable__IEnumerator__Foreach
+namespace IEnumerable__IEnumerator__Foreach 
 {
     class Program
     {
