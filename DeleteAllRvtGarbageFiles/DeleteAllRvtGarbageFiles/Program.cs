@@ -30,11 +30,11 @@ namespace DeleteAllRvtGarbageFiles
                     pos += 3;
                     FindeFolders(item, ref files);
                 }
-                catch (PathTooLongException e)
+                catch (Exception e) when(e is PathTooLongException || e is UnauthorizedAccessException)
                 {
                     Console.WriteLine(e.Message);
                 }
-                catch (UnauthorizedAccessException e)
+                catch(Exception e)
                 {
                     Console.WriteLine(e.Message);
                 }
@@ -51,13 +51,13 @@ namespace DeleteAllRvtGarbageFiles
                 try
                 {
                     end = item.Name.Substring(item.Name.Length - 8, 4);
+                    if (int.TryParse(end, out x) && item.Extension == ".rvt" && item.Name[item.Name.Length - 9] == '.')
+                    {
+                        files.Add(item);
+                        b = true;
+                    }
                 }
                 catch { }
-                if (int.TryParse(end, out x) && item.Extension == ".rvt" && item.Name[item.Name.Length - 9] == '.')
-                {
-                    files.Add(item);
-                    b = true;
-                }
             }
             return b;
         }
@@ -105,15 +105,37 @@ namespace DeleteAllRvtGarbageFiles
                 try
                 {
                     end = item.Name.Substring(item.Name.Length - 8, 4);
+                    if (int.TryParse(end, out x) && item.Extension == ".rvt" && item.Name[item.Name.Length - 9] == '.')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(new string(' ', pos + 3) + item.Name);
+                    }
                 }
                 catch { }
-                if (int.TryParse(end, out x) && item.Extension == ".rvt" && item.Name[item.Name.Length - 9] == '.')
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(new string(' ', pos + 3) + item.Name);
-                }
             }
         }
+
+        static string GetFilesSize(List<FileInfo> files)
+        {
+            string size = "0 Dytes";
+            double len = 0;
+            foreach (FileInfo item in files)
+            {
+                len += item.Length;
+            }
+
+            if (len >= 1073741824.0)
+                size = String.Format("{0:##.##}", len / 1073741824.0) + "GB";
+            else if (len >= 1048576.0)
+                size = String.Format("{0:##.##}", len / 1048576.0) + "MB";
+            else if (len >= 1024.0)
+                size = String.Format("{0:##.##}", len / 1024.0) + "KB";
+            else if (len > 0 && len < 1024.0)
+                size = String.Format("{0:##.##}", len / 1024.0) + "KB";
+
+            return size;
+        }
+
 
         static void Main(string[] args)
         {
@@ -137,8 +159,16 @@ namespace DeleteAllRvtGarbageFiles
                 {
                     directory = new DirectoryInfo(path);
                     Console.WriteLine(path);
-                    FindeFolders(directory, ref files);
-                    DeleteFiles(files);
+                    try
+                    {
+                        FindeFolders(directory, ref files);
+                        Console.WriteLine("Files size: " + GetFilesSize(files));
+                    }
+                    catch { }
+                    finally
+                    {
+                        DeleteFiles(files);
+                    }
                 }
                 catch (Exception)
                 {
