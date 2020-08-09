@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZZ\\source\\repos\\NumberToWordsonverter\\NumberToWordsonverter\\NumberToWordsonverter.csproj": {}
+    "C:\\Users\\ZZ\\Source\\Repos\\Interesting-and-Useful\\NumberToWordsonverter\\NumberToWordsonverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZZ\\source\\repos\\NumberToWordsonverter\\NumberToWordsonverter\\NumberToWordsonverter.csproj": {
+    "C:\\Users\\ZZ\\Source\\Repos\\Interesting-and-Useful\\NumberToWordsonverter\\NumberToWordsonverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZZ\\source\\repos\\NumberToWordsonverter\\NumberToWordsonverter\\NumberToWordsonverter.csproj",
+        "projectUniqueName": "C:\\Users\\ZZ\\Source\\Repos\\Interesting-and-Useful\\NumberToWordsonverter\\NumberToWordsonverter.csproj",
         "projectName": "NumberToWordsonverter",
-        "projectPath": "C:\\Users\\ZZ\\source\\repos\\NumberToWordsonverter\\NumberToWordsonverter\\NumberToWordsonverter.csproj",
+        "projectPath": "C:\\Users\\ZZ\\Source\\Repos\\Interesting-and-Useful\\NumberToWordsonverter\\NumberToWordsonverter.csproj",
         "packagesPath": "C:\\Users\\ZZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZZ\\source\\repos\\NumberToWordsonverter\\NumberToWordsonverter\\obj\\",
+        "outputPath": "C:\\Users\\ZZ\\Source\\Repos\\Interesting-and-Useful\\NumberToWordsonverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

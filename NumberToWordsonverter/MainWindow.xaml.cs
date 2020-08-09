@@ -46,23 +46,27 @@ namespace NumberToWordsonverter
         }
         private string FixWords(string words)
         {
-            var strArr = words.Remove(0, 1).Split(' ');
-
-            // 4-9
-            if (strArr.Length >= 4 && strArr.Length <= 9)
+            if (words.Contains("Մեկ Հազար"))
             {
-                if (strArr[0] == "Մեկ" || strArr[0] == "Один")
-                {
-                    strArr = strArr.Skip(1).ToArray();
-                }
+                words = words.Replace("Մեկ Հազար", "Հազար");
             }
 
-            for (int i = 0; i < strArr.Length; i++)
+            if (words.Contains("Մեկ Հարյուր"))
             {
-                strArr[i] += " ";
+                words = words.Replace("Մեկ Հարյուր", "Հարյուր");
             }
 
-            return string.Concat(strArr);
+            if (words.Contains("Один Тысяча"))
+            {
+                words = words.Replace("Один Тысяча", "Тысяча");
+            }
+
+            if (words.Contains("Один Сто"))
+            {
+                words = words.Replace("Один Сто", "Сто");
+            }
+
+            return words;
         }
     }
 }
