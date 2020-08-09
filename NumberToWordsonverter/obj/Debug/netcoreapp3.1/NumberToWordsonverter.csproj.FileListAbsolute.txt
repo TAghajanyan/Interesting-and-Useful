@@ -1,0 +1,17 @@
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.csprojAssemblyReference.cache
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter_MarkupCompile.cache
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter_MarkupCompile.lref
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.exe
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.deps.json
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.runtimeconfig.json
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.runtimeconfig.dev.json
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.dll
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\bin\Debug\netcoreapp3.1\NumberToWordsonverter.pdb
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.g.resources
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.AssemblyInfoInputs.cache
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.AssemblyInfo.cs
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.dll
+C:\Users\ZZ\source\repos\NumberToWordsonverter\NumberToWordsonverter\obj\Debug\netcoreapp3.1\NumberToWordsonverter.pdb
